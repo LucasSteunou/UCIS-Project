@@ -1,0 +1,6 @@
+h3 == 3.7.7
+matplotlib == 3.9.1
+geopandas == 1.0.1
+shapely == 2.0.4
+numpy == 2.0.0
+networkx == 3.3

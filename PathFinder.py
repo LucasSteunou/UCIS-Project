@@ -383,16 +383,6 @@ if __name__ == '__main__':
     print("-" * 25 + "\n")
     path_finder.compare_length()
 
-    test_buffed_area = shapely.buffer(
-        Polygon([[1.4028904968766653, 43.615375653647305], [1.419394474708895, 43.61404741799933],
-                 [1.4203024649028748, 43.64628833508161]]),
-        path_finder.restricted_uas_margin / 60000)
-    gdf = gpd.GeoDataFrame({'geometry': [test_buffed_area]})
-    gdf.plot(ax=path_finder.ax, color='blue', edgecolor='blue', alpha=0.4)
-    print("============>", 6378137 * m.sin(
-        2 * m.pi / 360 * Polygon([[1.4028904968766653, 43.615375653647305], [1.419394474708895, 43.61404741799933],
-                                  [1.4203024649028748, 43.64628833508161]]).distance(test_buffed_area.exterior)))
-    path_finder.show_all()
 
 
 

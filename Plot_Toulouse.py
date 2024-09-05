@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from tqdm import tqdm
 
 ## Excel, découpage,...
-data = pd.read_excel(r"C:\Users\lsteunou\PycharmProjects\Astar_H3\filaire-de-voirie.xlsx")
+data = pd.read_excel(r"C:\Users\steun\PycharmProjects\UCIS-Project\filaire-de-voirie.xlsx")
 T = pd.DataFrame(data, columns=['Geo Shape', 'longueur'])
 T = np.array(T)
 A = ['a', 'z', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'q', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'w', 'x', 'c',
@@ -138,5 +138,5 @@ print("Done!")
 # plt.savefig('Graphe_Toulouse')
 # plt.show()
 
-pickle.dump(G, open('C:\\Users\\lsteunou\\PycharmProjects\\Astar_H3\\Graphe', 'wb'))
-pickle.dump(posi, open('C:\\Users\\lsteunou\\PycharmProjects\\Astar_H3\\Posi', 'wb'))
+pickle.dump(G, open('C:\\Users\\steun\\PycharmProjects\\UCIS-Project\\Graphe', 'wb'))
+pickle.dump(posi, open('/Visualisation/Posi', 'wb'))
